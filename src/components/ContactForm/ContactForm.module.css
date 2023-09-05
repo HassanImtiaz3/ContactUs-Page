@@ -1,0 +1,84 @@
+.contactBtn {
+    display: flex;
+    gap: 32px;
+    padding: 10px 24px;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0 20px; /* Add padding to the container */
+}
+
+.formContainer {
+    width: 100%;
+    position: relative;
+    /* Remove the right positioning */
+}
+
+.formContainer input
+ {
+    width: 96%; /* Make input fields 100% width */
+    height: 40px;
+    padding: 0 8px;
+    margin-bottom: 15px; /* Slightly adjust the margin */
+}
+
+.formContainer textarea{
+    width: 96%; /* Make input fields 100% width */
+    height: 100px;
+    padding: 0 8px;
+    margin-bottom: 15px; /* Slightly adjust the margin */
+}
+
+.formContainer label {
+    position: absolute;
+    font-size: 14px;
+    top: -14px;
+    left: 10px;
+    background-color: white;
+    padding: 0 10px;
+}
+
+::placeholder {
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+}
+
+.contactFormImage {
+    display: flex;
+    justify-content: end;
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack content vertically */
+    }
+
+    .contactForm {
+        padding: 0; /* Remove padding on smaller screens */
+    }
+
+    .contactBtn {
+        flex-direction: column; /* Stack buttons vertically on mobile */
+    }
+
+    .outlineBtn {
+        margin: 0 auto; /* Center outline button on mobile */
+    }
+
+    .contactFormImage img {
+        width: 100%;
+    }
+
+    
+}

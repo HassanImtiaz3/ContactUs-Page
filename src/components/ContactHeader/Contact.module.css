@@ -1,0 +1,31 @@
+.contactSection {
+    margin-top: 20px;
+    text-align: center; /* Center-align the text */
+}
+
+.contactSection h1 {
+    font-size: 48px;
+    font-weight: 900; /* Make it bolder */
+    line-height: 72px;
+    padding: 0 25px;
+}
+
+.contactSection p {
+    font-weight: 700;
+    padding: 0 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .contactSection h1 {
+        font-size: 25px;
+        font-weight: 900; /* Make it bolder for smaller screens */
+        line-height: 54px;
+        padding: 0 15px;
+    }
+
+    .contactSection p {
+        font-size: small;
+        font-weight: 700;
+        padding: 0 15px;
+    }
+}
